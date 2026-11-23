@@ -3,13 +3,6 @@
       box-sizing:border-box
     }
 
-	html, body {
-	  min-width: 1200px; /* Palitan base sa lapad ng desktop design mo */
-	  margin: 0;
-	  padding: 0;
-	  overflow-x: auto; /* Para pwedeng i-scroll pakaliwa/pakanan kung mag-zoom in */
-	}
-
     html{
       scroll-behavior:smooth
     }

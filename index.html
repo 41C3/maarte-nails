@@ -375,6 +375,20 @@
   </footer>
 
 	<script>
+		function fitDesktopToMobile() {  // Veiwport alt
+		    const desktopWidth = 1280; // Lapad ng desktop layout mo
+		    const screenWidth = window.innerWidth;
+		    if (screenWidth < desktopWidth) {
+	      const scale = screenWidth / desktopWidth;
+	      document.body.style.width = desktopWidth + 'px';
+	      document.body.style.transform = `scale(${scale})`;
+	      document.body.style.transformOrigin = 'top left';
+	      document.body.style.height = (document.body.scrollHeight * scale) + 'px';
+	    }
+	  }
+	  window.addEventListener('load', fitDesktopToMobile);
+	  window.addEventListener('resize', fitDesktopToMobile); // viewport alt end
+		
 		const form = document.getElementById('bookingForm');
 		const dateInput = document.getElementById('date');
 		const today = new Date();

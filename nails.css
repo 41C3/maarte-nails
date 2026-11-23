@@ -4,6 +4,8 @@
     }
 
 	html, body {
+	  display: flex;
+	  justify-content; flex-start;
 	  min-width: 1200px; /* Palitan base sa lapad ng desktop design mo */
 	  margin: 0;
 	  padding: 0;
